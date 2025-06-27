@@ -1,0 +1,406 @@
+[
+    {
+        "questionId": "523649d1",
+        "questionNumber": "S1.",
+        "questionContent": "Which of the following actions have you or your household done in the past 60 days? Please select any that apply.",
+        "options": [
+            "A. Bought a home",
+            "B. Purchased a vehicle",
+            "C. Went on a vacation",
+            "D. Changed my home Internet service provider",
+            "E. Subscribed to a new video streaming platform",
+            "F. Changed my job or place of employment",
+            "G. Purchased a new household appliance",
+            "H. Started a membership at a gym or fitness facility",
+            "I. Moved residences",
+            "J. Purchased new device or technology (e.g. smart TV, computer, tablet, phone, etc.)",
+            "K. Installed home automation equipment",
+            "L. Purchased patio furniture"
+        ]
+    },
+    {
+        "questionId": "d82057ab",
+        "questionNumber": "S2.",
+        "questionContent": "Which best describes your role in the decision-making process for selecting an Internet service provider?",
+        "options": [
+            "1. Primary/sole decision-making responsibilities",
+            "2. Shared/equal decision-making responsibilities with at least one other person(s)",
+            "3. Not involved in the decision-making process"
+        ]
+    },
+    {
+        "questionId": "d449cd45",
+        "questionNumber": "S3.",
+        "questionContent": "Does your household currently subscribe to high-speed home Internet service (Fiber, Cable, DSL, 5G Home Internet, etc.)?",
+        "options": [
+            "1. Yes",
+            "2. No"
+        ]
+    },
+    {
+        "questionId": "596be242",
+        "questionNumber": "S1.",
+        "questionContent": "For how many years have you been in practice in the United States post-residency or post-fellowship? Please record a whole number (not a range). (RANGE: 1-50) Years (TERMINATE IMMEDIATELY IF 0. TERMINATE AT THE END OF THE SCREENER IF UNDER 3 OR OVER 30)",
+        "options": []
+    },
+    {
+        "questionId": "305a5358",
+        "questionNumber": "Q1.",
+        "questionContent": "Which of the following describes your age?",
+        "options": [
+            "1. 18-24",
+            "2. 25-34",
+            "3. 35-44",
+            "4. 45-54",
+            "5. 55-64",
+            "6. 65-74",
+            "7. 75+",
+            "99. Prefer not to say"
+        ]
+    },
+    {
+        "questionId": "bb6173b5",
+        "questionNumber": "Q2.",
+        "questionContent": "Are you:",
+        "options": [
+            "1. Female",
+            "2. Male",
+            "3. Prefer to describe",
+            "99. Prefer not to say"
+        ]
+    },
+    {
+        "questionId": "d32cb908",
+        "questionNumber": "Q3.",
+        "questionContent": "In which state do you currently live?",
+        "options": []
+    },
+    {
+        "questionId": "87c16085",
+        "questionNumber": "Q4.",
+        "questionContent": "What is your ZIP Code?",
+        "options": []
+    },
+    {
+        "questionId": "fe184e6e",
+        "questionNumber": "Q5.",
+        "questionContent": "Which of the following best describes the area where your home is located?",
+        "options": [
+            "1. Urban or city center",
+            "2. Suburb",
+            "3. Small town",
+            "4. Rural area",
+            "99. Prefer not to say"
+        ]
+    },
+    {
+        "questionId": "3810986a",
+        "questionNumber": "Q6.",
+        "questionContent": "What are your household's needs for high-speed Internet?",
+        "options": []
+    },
+    {
+        "questionId": "2b5e95fb",
+        "questionNumber": "Q7.",
+        "questionContent": "At the beginning of the survey, you reported that you had switched Internet service providers in the past 60 days. Which company was your previous Internet service with?",
+        "options": []
+    },
+    {
+        "questionId": "ae96f53a",
+        "questionNumber": "Q8.",
+        "questionContent": "What type of Internet connection did you use with your previous provider?",
+        "options": [
+            "1. Cable Internet",
+            "2. Fiber Internet",
+            "3. 5G Home Internet (a device that receives a 5G signal for your home that is not your mobile phone)",
+            "4. DSL (high-speed Internet connection that uses existing copper telephone lines to transmit data)",
+            "5. Satellite Internet",
+            "6. Other (please describe)",
+            "98. Unsure"
+        ]
+    },
+    {
+        "questionId": "6d8a47fe",
+        "questionNumber": "Q9.",
+        "questionContent": "Which company currently provides your home Internet service?",
+        "options": []
+    },
+    {
+        "questionId": "aa233a5f",
+        "questionNumber": "Q10.",
+        "questionContent": "What type of Internet connection do you use with your current provider?",
+        "options": [
+            "1. Cable Internet (or fiber through a cable company)",
+            "2. Fiber Internet (not from a traditional cable provider)",
+            "3. 5G Home Internet (a device that receives a 5G signal for your home that is not your mobile phone)",
+            "4. DSL (high-speed Internet connection that uses existing copper telephone lines to transmit data)",
+            "5. Satellite Internet",
+            "6. Other (please describe)",
+            "98. Unsure"
+        ]
+    },
+    {
+        "questionId": "9548d151",
+        "questionNumber": "Q11.",
+        "questionContent": "Was the change in home Internet service provider planned or unplanned?",
+        "options": [
+            "1. Planned - I had been thinking about it for a while",
+            "2. Unplanned - Caused by a recent event"
+        ]
+    },
+    {
+        "questionId": "536eed65",
+        "questionNumber": "Q12.",
+        "questionContent": "Please share about the situation you faced when you decided to switch your Internet service provider. As you describe the situation, please share the factors that influenced your decision to choose another provider (i.e. promotional pricing, customer service, product performance, etc.).",
+        "options": []
+    },
+    {
+        "questionId": "124c9875",
+        "questionNumber": "Q13.",
+        "questionContent": "Which best describes your situation when you decided to switch Internet providers?",
+        "options": [
+            "1. I was so dissatisfied with my previous provider I felt I had to look for a different option elsewhere.",
+            "2. I wasn't completely dissatisfied, but the new provider's offerings were more attractive and persuaded me to switch.",
+            "3. I was forced to change providers (moved, bought a new home, financially ineligible, non-pay, etc.)"
+        ]
+    },
+    {
+        "questionId": "0f6e102b",
+        "questionNumber": "Q14-1.",
+        "questionContent": "What was the tipping point that ultimately got you to take action and switch to a new provider?",
+        "options": []
+    },
+    {
+        "questionId": "8f2a3f1d",
+        "questionNumber": "Q14-2.",
+        "questionContent": "What was the most appealing aspect of the offer or service from the new provider?",
+        "options": []
+    },
+    {
+        "questionId": "dc0a6b39",
+        "questionNumber": "Q14-3.",
+        "questionContent": "Which best describes the circumstance that forced you to change Internet service providers?",
+        "options": [
+            "1. Moved residences",
+            "2. Purchased a new home",
+            "3. Financially ineligible",
+            "4. Service provider left my area",
+            "5. Disconnected for not paying bill",
+            "6. Provider had an unresolved ongoing outage"
+        ]
+    },
+    {
+        "questionId": "0caec9f6",
+        "questionNumber": "Q15.",
+        "questionContent": "Approximately how many service issues did you experience with your previous Internet service provider in your last 12 months with them?",
+        "options": []
+    },
+    {
+        "questionId": "b5086e47",
+        "questionNumber": "Q39.",
+        "questionContent": "Thinking about your home Internet service, how strongly do you agree with the following statements:",
+        "options": [
+            "A. It generally doesn't matter which Internet service provider I choose because they are mostly the same.",
+            "B. I'm generally loyal to the Internet provider I use.",
+            "C. I am always looking for the lowest monthly price.",
+            "D. It would be a significant issue if my household's Internet service was down, even for a few hours.",
+            "E. My household is very connected, with multiple devices using the Internet at any time.",
+            "F. My Internet service needs are relatively basic.",
+            "G. I feel comfortable setting up, managing, and troubleshooting my home's Internet service.",
+            "H. My Internet service primarily supports my entertainment needs.",
+            "I. My household needs home Internet for work and/or school.",
+            "J. My household needs the absolute fastest Internet speed.",
+            "K. I need my Internet service to be uncomplicated and very easy to use.",
+            "L. Internet privacy and security are very important to me.",
+            "M. I need my Internet service to be reliable and always connected. [SCALE: Completely Agree, Somewhat Agree, Slightly Agree, Neutral, Slightly Disagree, Somewhat Disagree, Completely Disagree, Unsure]"
+        ]
+    },
+    {
+        "questionId": "0c7ef10e",
+        "questionNumber": "Q40.",
+        "questionContent": "Approximately, how many devices are connected to your home Internet service?",
+        "options": [
+            "1. 1 device",
+            "2. 2 to 5 devices",
+            "3. 6 to 10 devices",
+            "4. 11 or more devices",
+            "98. Unsure"
+        ]
+    },
+    {
+        "questionId": "ffb6f0fc",
+        "questionNumber": "Q41.",
+        "questionContent": "What types of devices do you connect to your home Internet? Please select any that apply.",
+        "options": [
+            "A. Desktop or laptop computer",
+            "B. Tablet or iPad",
+            "C. Cell phone",
+            "D. VoIP phone",
+            "E. Video game console",
+            "F. Smart TV",
+            "G. Streaming device (e.g. Roku, Firestick, etc.)",
+            "H. Smart appliances",
+            "I. Home monitoring devices (such as a door camera, automated lighting, smart thermostat)",
+            "J. Other (please describe)",
+            "97. None of the above"
+        ]
+    },
+    {
+        "questionId": "549292dd",
+        "questionNumber": "Q42.",
+        "questionContent": "Which of the following services do you use in your home? Select any that apply.",
+        "options": [
+            "A. Streaming video service (e.g. Hulu, Amazon Prime, Peacock, YouTube TV, etc.)",
+            "B. Cable TV service",
+            "C. Satellite TV service",
+            "D. Home telephone line",
+            "97. None of the above"
+        ]
+    },
+    {
+        "questionId": "abe4da41",
+        "questionNumber": "Q43.",
+        "questionContent": "How frequently do you engage with the following activities using your home Internet?",
+        "options": [
+            "A. Streaming movies or TV shows",
+            "B. Streaming music",
+            "C. Listening to podcasts",
+            "D. Online gaming",
+            "E. Streaming online videos (e.g. YouTube)",
+            "F. Blogging or content creation",
+            "G. Online education",
+            "H. Working from home",
+            "I. Social media browsing or communication",
+            "J. Keeping up to date with news and events",
+            "K. Online shopping",
+            "L. General browsing/online searches",
+            "M. Managing finances/paying bills",
+            "1. Every day",
+            "2. A couple times per week",
+            "3. A couple times per month",
+            "4. Less than once per month",
+            "5. Never"
+        ]
+    },
+    {
+        "questionId": "d01a4b2d",
+        "questionNumber": "Q46.",
+        "questionContent": "Which of the following best describes your current employment status?",
+        "options": [
+            "1. Employed full-time",
+            "2. Employed part-time",
+            "3. Self employed / own my own business",
+            "4. Out of work and looking for work",
+            "5. Out of work but not currently looking for work",
+            "6. Retired and not working",
+            "7. Retired, but still working",
+            "8. Stay at home parent",
+            "9. Full-time student",
+            "10. Unable to work",
+            "99. Prefer not to say"
+        ]
+    },
+    {
+        "questionId": "0166646b",
+        "questionNumber": "Q47.",
+        "questionContent": "Do you work from home in any capacity?",
+        "options": [
+            "1. Yes (full-time)",
+            "2. Yes (part-time)",
+            "3. Yes (on occasion)",
+            "4. Do not work from home",
+            "99. Prefer not to say"
+        ]
+    },
+    {
+        "questionId": "4ba2fb97",
+        "questionNumber": "Q48.",
+        "questionContent": "How many days per week do you work from home? Slider Bar: 1 to 7 days",
+        "options": []
+    },
+    {
+        "questionId": "1692ad3c",
+        "questionNumber": "Q49.",
+        "questionContent": "Do you own or rent your home?",
+        "options": [
+            "1. Own",
+            "2. Rent",
+            "99. Prefer not to say"
+        ]
+    },
+    {
+        "questionId": "d64664b6",
+        "questionNumber": "Q50.",
+        "questionContent": "Which best describes your home:",
+        "options": [
+            "1. Single family, detached home",
+            "2. Single family, attached home or townhouse",
+            "3. Apartment or condominium",
+            "4. Mobile home",
+            "5. Other (please describe)",
+            "99. Prefer not to say"
+        ]
+    },
+    {
+        "questionId": "f23a24b9",
+        "questionNumber": "Q51.",
+        "questionContent": "Which of the following best describes your household?",
+        "options": [
+            "1. I live on my own",
+            "2. I live with roommates",
+            "3. I live with my kids, no spouse/partner",
+            "4. I live with a spouse/partner and kids",
+            "5. I live with a spouse/partner and no kids",
+            "6. Other (please describe)",
+            "99. Prefer not to say"
+        ]
+    },
+    {
+        "questionId": "8d2e26ae",
+        "questionNumber": "Q52.",
+        "questionContent": "Which category best describes you? Please select any that apply.",
+        "options": [
+            "A. American Indian or Alaska Native (e.g., Navajo nation, Blackfeet tribe, Mayan, Aztec, Native Village or Barrow Inupiat Traditional Government, Nome Eskimo Community, etc.)",
+            "B. Asian (e.g., Chinese, Filipino, Asian Indian, Vietnamese, Korean, Japanese, etc.)",
+            "C. Black or African American (e.g., African American, Jamaican, Haitian, Nigerian, Ethiopian, Somalian, etc.)",
+            "D. Latino, Hispanic, or Spanish origin (e.g., Mexican or Mexican American, Puerto Rican, Cuban, Salvadoran, Dominican, Colombian, etc.)",
+            "E. Middle Eastern or North African (e.g., Lebanese, Iranian, Egyptian, Syrian, Moroccan, Algerian, etc.)",
+            "F. Native Hawaiian or Other Pacific Islander (e.g., Native Hawaiian, Samoan, Chamorro, Tongan, Fijian, etc.)",
+            "G. White (e.g., German, Irish, English, Italian, Polish, French, etc.)",
+            "H. Some other race, ethnicity, or origin",
+            "99. Prefer not to say"
+        ]
+    },
+    {
+        "questionId": "cb2bb323",
+        "questionNumber": "Q53.",
+        "questionContent": "What is the last grade of school you completed?",
+        "options": [
+            "1. Did not graduate from high school",
+            "2. High school graduate or equivalent",
+            "3. Some college",
+            "4. 2-year college degree",
+            "5. 4-year college degree",
+            "6. Some post-graduate work",
+            "7. Post graduate degree",
+            "8. Professional degree",
+            "99. Prefer not to say"
+        ]
+    },
+    {
+        "questionId": "25db874d",
+        "questionNumber": "Q54.",
+        "questionContent": "Which best describes your annual household income?",
+        "options": [
+            "1. Less than $25,000",
+            "2. $25,000 to $49,999",
+            "3. $50,000 to $74,999",
+            "4. $75,000 to $99,999",
+            "5. $100,000 to $124,999",
+            "6. $125,000 to $200,000",
+            "7. More than $200,000",
+            "8. Unsure",
+            "99. Prefer not to say"
+        ]
+    }
+]

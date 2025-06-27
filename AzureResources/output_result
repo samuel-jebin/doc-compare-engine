@@ -1,0 +1,80 @@
+Screener Module
+S1. Which of the following actions have you or your household done in the past 60 days? Please select
+any that apply.
+[ROTATE A-H]
+A. Bought a home
+B. Purchased a vehicle
+C. Went on a vacation
+D. Changed my home Internet service provider [TERM]
+E. Subscribed to a new video streaming platform
+F. Changed my job or place of employment
+G. Purchased a new household appliance
+H. Started a membership at a gym or fitness facility
+I. Moved residences
+J. Purchased new device or technology (e.g. smart TV, computer, tablet, phone, etc.)
+K. Installed home automation equipment [do not randomize]
+L. Purchased patio furniture [Lock]
+S2. Which best describes your role in the decision-making process for selecting an Internet service
+provider?
+1. Primary/sole decision-making responsibilities
+2. Shared/equal decision-making responsibilities with at least one other person(s)
+3. Not involved in the decision-making process [Close]
+S3. Does your household currently subscribe to high-speed home Internet service (Fiber, Cable, DSL,
+5G Home Internet, etc.)?
+1. Yes
+2. No [Screenout]
+Module 1 - Initial Demographics and Quotas
+S1.
+For how many years have you been in practice in the United States post-residency or post-fellowship?
+Please record a whole number (not a range). (RANGE: 1-50)
+Years (TERMINATE IMMEDIATELY IF 0. TERMINATE AT THE END OF THE SCREENER
+IF UNDER 3 OR OVER 30)
+Q1. Which of the following describes your age?
+1. 18-24 [stop]
+2. 25-34
+3. 35-44
+4. 45-54
+5. 55-64 [end]
+6. 65-74 [exit]
+7. 75+
+99. Prefer not to say [TERM]
+Q2. Are you:
+1. Female
+2. Male
+3. Prefer to describe
+99. Prefer not to say [screened]
+Q3. In which state do you currently live?
+[DROP DOWN LIST]
+Q4. What is your ZIP Code?
+[OPEN-ENDED TEXT BOX]
+Q5. Which of the following best describes the area where your home is located?
+1. Urban or city center
+2. Suburb
+3. Small town
+4. Rural area
+99. Prefer not to say
+Module 2 - Current and Previous Home Internet Situation
+Q6. What are your household's needs for high-speed Internet?
+[OPEN-ENDED TEXT BOX]
+Q7. At the beginning of the survey, you reported that you had switched Internet service providers in the
+past 60 days. Which company was your previous Internet service with?
+[OPEN-ENDED TEXT BOX]
+Q8. What type of Internet connection did you use with your previous provider?
+1. Cable Internet
+2. Fiber Internet
+3. 5G Home Internet (a device that receives a 5G signal for your home that is not your mobile
+phone)
+4. DSL (high-speed Internet connection that uses existing copper telephone lines to transmit data)
+5. Satellite Internet
+6. Other (please describe)
+98. Unsure
+Q9. Which company currently provides your home Internet service?
+[OPEN-ENDED TEXT BOX]
+Q10. What type of Internet connection do you use with your current provider?
+1. Cable Internet (or fiber through a cable company)
+2. Fiber Internet (not from a traditional cable provider)
+3. 5G Home Internet (a device that receives a 5G signal for your home that is not your mobile
+phone)
+4. DSL (high-speed Internet connection that uses existing copper telephone lines to transmit data)
+5. Satellite Internet
+6. Other (please describe)
