@@ -1,8 +1,5 @@
 from openai import AzureOpenAI
 
-
-
-
 # def load_file_content(file_path):
 #     with open(file_path,"r",encoding="utf-8") as f:
 #         return f.read()

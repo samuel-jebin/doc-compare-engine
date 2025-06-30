@@ -10,6 +10,32 @@
             max-width: 800px;
             margin: auto;
         }
+        .red-text{
+            color:red
+        }
+        #compareResult {
+            color: red;
+        }
+        #loading {
+            display: none;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .loader {
+            border: 6px solid #f3f3f3;
+            border-top: 6px solid #333;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
         h2, h3 {
             color: #333;
         }
@@ -66,84 +92,106 @@
 
             <h3>Generated HTML Content:</h3>
             <iframe id="htmlViewer"></iframe>
+            <div id="loading">
+            <div class="loader"></div>
+            <p>Processing...</p>
         </div>
+        
     </div>
 
-    <script>
-        // Upload to Blob logic
-        const uploadBlobForm = document.getElementById('uploadBlobForm');
-        const blobResponseText = document.getElementById('blobResponse');
+<script>
+    // Shared loading spinner
+    const loadingDiv = document.getElementById('loading');
 
-        uploadBlobForm.addEventListener('submit', async function (event) {
-            event.preventDefault();
+    // Upload to Blob logic
+    const uploadBlobForm = document.getElementById('uploadBlobForm');
+    const blobResponseText = document.getElementById('blobResponse');
 
-            const fileInput = document.getElementById('blobPdfFile');
-            const file = fileInput.files[0];
+    uploadBlobForm.addEventListener('submit', async function (event) {
+        event.preventDefault();
 
-            if (!file) {
-                blobResponseText.innerText = "Please select a file.";
-                return;
+        const fileInput = document.getElementById('blobPdfFile');
+        const file = fileInput.files[0];
+
+        if (!file) {
+            blobResponseText.innerText = "Please select a file.";
+            return;
+        }
+
+        const formData = new FormData();
+        formData.append('file', file);
+
+        // Show loader
+        loadingDiv.style.display = 'block';
+        blobResponseText.innerText = "";
+
+        try {
+            const response = await fetch('http://127.0.0.1:8000/json_to_blob', {
+                method: 'POST',
+                body: formData
+            });
+
+            const result = await response.json();
+            loadingDiv.style.display = 'none';
+
+            if (response.ok) {
+                blobResponseText.innerText = result.Message;
+            } else {
+                blobResponseText.innerText = `Error: ${result.message || result.error}`;
             }
+        } catch (error) {
+            loadingDiv.style.display = 'none';
+            blobResponseText.innerText = "An error occurred: " + error.message;
+        }
+    });
 
-            const formData = new FormData();
-            formData.append('file', file);
+    // Upload and Compare logic
+    const uploadCompareForm = document.getElementById('uploadCompareForm');
+    const compareResult = document.getElementById('compareResult');
+    const htmlViewer = document.getElementById('htmlViewer');
 
-            try {
-                const response = await fetch('http://127.0.0.1:8000/json_to_blob', {
-                    method: 'POST',
-                    body: formData
-                });
+    uploadCompareForm.addEventListener('submit', async function (event) {
+        event.preventDefault();
 
-                const result = await response.json();
+        const fileInput = document.getElementById('comparePdfFile');
+        const file = fileInput.files[0];
 
-                if (response.ok) {
-                    blobResponseText.innerText = result.Message;
-                } else {
-                    blobResponseText.innerText = `Error: ${result.message || result.error}`;
-                }
-            } catch (error) {
-                blobResponseText.innerText = "An error occurred: " + error.message;
+        if (!file) {
+            compareResult.innerText = "Please select a file.";
+            return;
+        }
+
+        const formData = new FormData();
+        formData.append('file', file);
+
+        // Show loader
+        loadingDiv.style.display = 'block';
+        compareResult.innerText = '';
+        compareResult.classList.remove("red-text");
+
+        try {
+            const response = await fetch('http://127.0.0.1:8000/upload_and_process', {
+                method: 'POST',
+                body: formData
+            });
+
+            const data = await response.json();
+            loadingDiv.style.display = 'none';
+
+            if (response.ok) {
+                compareResult.innerText = data.comparison_result;
+                compareResult.classList.add("red-text");
+                htmlViewer.srcdoc = data.html_content;
+            } else {
+                compareResult.innerText = "Error: " + (data.error || "Unknown error.");
             }
-        });
+        } catch (error) {
+            loadingDiv.style.display = 'none';
+            compareResult.innerText = "An error occurred: " + error.message;
+        }
+    });
+</script>
 
-        // Upload and Compare logic
-        const uploadCompareForm = document.getElementById('uploadCompareForm');
-        const compareResult = document.getElementById('compareResult');
-        const htmlViewer = document.getElementById('htmlViewer');
-
-        uploadCompareForm.addEventListener('submit', async function (event) {
-            event.preventDefault();
-
-            const fileInput = document.getElementById('comparePdfFile');
-            const file = fileInput.files[0];
-
-            if (!file) {
-                compareResult.innerText = "Please select a file.";
-                return;
-            }
-
-            const formData = new FormData();
-            formData.append('file', file);
-
-            try {
-                const response = await fetch('http://127.0.0.1:8000/upload_and_process', {
-                    method: 'POST',
-                    body: formData
-                });
-
-                const data = await response.json();
-
-                if (response.ok) {
-                    compareResult.innerText = data.comparison_result;
-                    htmlViewer.srcdoc = data.html_content;
-                } else {
-                    compareResult.innerText = "Error: " + (data.error || "Unknown error.");
-                }
-            } catch (error) {
-                compareResult.innerText = "An error occurred: " + error.message;
-            }
-        });
-    </script>
 
 </body>
 </html>
