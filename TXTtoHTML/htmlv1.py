@@ -1,16 +1,21 @@
 import re
 from bs4 import BeautifulSoup
-
-
+from docx import Document
 # def read_txt_locally(filepath):
 #     with open(filepath,"r",encoding="utf-8") as reader:
 #         return reader.read()
+# def read_from_file(file_path):
+#     doc = Document(file_path)
+
+#     for para in doc.paragraphs:
+#         text = "\n".join([para.text for para in doc.paragraphs])
+#     return text
 
 def preprocess_txt(raw_text):
     cleaned_lines = []
     for line in raw_text.splitlines():
         if "module" in line.lower():
-            continue  # Skip lines with 'module'
+            continue  
         cleaned_line = re.sub(r'\[[^\[\]]*\]', '', line)
         cleaned_lines.append(cleaned_line)
     return "\n".join(cleaned_lines)
@@ -31,7 +36,6 @@ def txt_to_html_form(text):
         if not line:
             continue
 
-        # Detect question line
         q_match = question_pattern.match(line)
         if q_match:
             if current_question_html:
@@ -45,7 +49,6 @@ def txt_to_html_form(text):
             )
             continue
 
-        # Detect option line
         o_match = option_pattern.match(line)
         if o_match and current_question_id:
             option_id = o_match.group(1)
@@ -60,24 +63,20 @@ def txt_to_html_form(text):
             current_question_html += radio_html
             continue
 
-        # Handle continuation line
         if current_question_html:
             if 'input type="radio"' in current_question_html:
-                # Append to last option's label
                 current_question_html = re.sub(
                     r'(</label></div>)$',
                     f' {line}\\1',
                     current_question_html
                 )
             else:
-                # Append to question text
                 current_question_html = re.sub(
                     r'(</p>)$',
                     f' {line}\\1',
                     current_question_html
                 )
 
-    # Final append
     if current_question_html:
         html_lines.append(current_question_html + '</div>')
 
@@ -93,12 +92,16 @@ def txt_to_html_form(text):
 #     print("HTML File save successfully")
 
 # if __name__=="__main__":
-#     file_path = r"C:\CursoryTech POC\pdf-text(form-recg).txt"
+#     file_path = r"C:\Cursory-docs\pdftxt(crop).txt"
 #     textcontent = read_txt_locally(file_path)
 #     cleaned_text = preprocess_txt(textcontent)
 #     htmlcontent = txt_to_html_form(cleaned_text)
-#     save_htmlfile(htmlcontent,"html_output.html")
+#     save_htmlfile(htmlcontent,"v2_html.html")
 #     print(htmlcontent)
     
     
-    
+# res = read_from_file(r"C:\Users\K1194\Downloads\original_doc.docx")
+# res_1 = preprocess_txt(res)
+# res_final = txt_to_html_form(res_1)
+# save_htmlfile(res_final,"demo.html")
+# print(res_final)

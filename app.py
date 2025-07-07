@@ -50,12 +50,14 @@ def upload_and_process():
         Html_content = htmlv1.txt_to_html_form(cleaned_text)
         html_to_txt  = preprocess.extract_questions_from_html(Html_content)
         json_content = blob.read_json_from_blob("cursorytech-json","test-json.json")
-        
         final_output = compare.compare_using_model(html_to_txt,json_content)
+        formatted_output = compare.summarize_mismatches(final_output)
+        highlighted_html = compare.highlight_html_mismatch(Html_content,final_output)
+        
         
         return jsonify({
-            "comparison_result" : final_output,
-            "html_content":Html_content
+            "comparison_result" : formatted_output,
+            "html_content":highlighted_html
         }),200
         
     except Exception as e:
@@ -63,8 +65,6 @@ def upload_and_process():
         return jsonify({
             "error":str(e)
         }),500
-        
-
-  
+    
 if __name__ == '__main__':
     app.run(debug=True,host="0.0.0.0",port=8000)
