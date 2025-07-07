@@ -1,0 +1,99 @@
+{
+  "mismatches": [
+    {
+      "questionNumber": "S1.",
+      "issues": [
+        {
+          "type": "Option Mismatch",
+          "option": "C",
+          "json": "C. Went on a vacation",
+          "html": "C. Went to a vacation"
+        },
+        {
+          "type": "Option Mismatch",
+          "option": "I",
+          "json": "I. Moved residences",
+          "html": "I. Purchased new device or technology (e.g. smart TV, computer, tablet, phone, etc.)"
+        },
+        {
+          "type": "Missing Option",
+          "option": "J",
+          "json": "J. Purchased new device or technology (e.g. smart TV, computer, tablet, phone, etc.)",
+          "html": null
+        },
+        {
+          "type": "Option Mismatch",
+          "option": "K",
+          "json": "K. Installed home automation equipment",
+          "html": "K. Purchased patio furniture"
+        },
+        {
+          "type": "Missing Option",
+          "option": "L",
+          "json": "L. Purchased patio furniture",
+          "html": null
+        }
+      ]
+    },
+    {
+      "questionNumber": "S3.",
+      "issues": [
+        {
+          "type": "Option Mismatch",
+          "option": "2",
+          "json": "2. No S1. For how many years have you been in practice in the United States post-residency or post-fellowship? Please record a whole number (not a range). (RANGE: 1-50) Years (TERMINATE IMMEDIATELY IF 0. TERMINATE AT THE END OF THE SCREENER IF UNDER 3 OR OVER 30)",
+          "html": "2. No"
+        }
+      ]
+    },
+    {
+      "questionNumber": "Q1.",
+      "issues": [
+        {
+          "type": "Question Mismatch",
+          "json": "Which of the following describes your age?",
+          "html": "Which of the followed describes your age?"
+        },
+        {
+          "type": "Option Mismatch",
+          "option": "4",
+          "json": "4. 45-54",
+          "html": "4. 450-54"
+        }
+      ]
+    },
+    {
+      "questionNumber": "Q6.",
+      "issues": [
+        {
+          "type": "Missing Question",
+          "json": "What are your household's needs for high-speed Internet?",
+          "html": null
+        }
+      ]
+    },
+    {
+      "questionNumber": "Q10.",
+      "issues": [
+        {
+          "type": "Extra Option in HTML",
+          "option": "7",
+          "json": null,
+          "html": "7. Hello Testing"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_questions_checked": 13,
+    "questions_with_mismatches": 5,
+    "mismatch_types": {
+      "Option Mismatch": 5,
+      "Missing Option": 2,
+      "Question Mismatch": 1,
+      "Missing Question": 1,
+      "Extra Option in HTML": 1
+    },
+    "status": "❌ Mismatches found"
+  }
+}
